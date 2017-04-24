@@ -23,7 +23,7 @@ function playAgain(){
   ike.hits = 0;
   document.getElementById('health').innerText = 'Health: ' + ike.health
   document.getElementById('hits').innerText = 'Hits: ' + ike.hits
-  document.getElementById('ike').innerHTML = '<img src="http://vignette2.wikia.nocookie.net/southpark/images/f/f5/Ike_2.png/revision/latest?cb=20160402113234">'
+  document.getElementById('ike').innerHTML = '<img src="http://vignette2.wikia.nocookie.net/southpark/images/f/f5/Ike_2.png/revision/latest?cb=20160402113234" width="200px">'
   document.getElementById('block').disabled = false;
   document.getElementById('forceField').disabled = false;
   document.getElementById('kick').disabled = false;
