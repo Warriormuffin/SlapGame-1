@@ -1,1 +1,16 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
+.health{
+  display: inline;
+}
+
+#ike.row {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 34%;
+
+}
+
+#buttons.col-xs-12{
+  text-align: center
+}

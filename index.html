@@ -1,12 +1,35 @@
 <html>
 <head>
 	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	
+	<link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
-	
-	<script src=""></script>
+	<div class="container">
+				<div class="row">
+					<h1 class="col-xs-4" id="health">Health: 100</h1>
+					<h1 class="col-xs-4" id="baby">Kick The Baby</h1>
+					<h1 class="col-xs-4" id="hits">Hits: 0</h1>
+				</div>
+						<div class="row">
+							<h1 class="cold-xs-12" id="defense"></h1>
+						</div>
+							<div class="row" id="ike">
+								<img class="picture" src="http://vignette2.wikia.nocookie.net/southpark/images/f/f5/Ike_2.png/revision/latest?cb=20160402113234">
+						 </div>
+							 <div class="row">
+								 <div class="col-xs-12" id="buttons">
+									<button type="button" class="btn btn-secondary" id="kick" onclick="kick()">Kick(10dmg)</button>
+									<button type="button" class="btn btn-secondary" id="punch" onclick="punch()">Punch(20dmg)</button>
+									<button type="button" class="btn btn-secondary" id="finishHim" onclick="finishHim()">Finish Him(25dmg)</button>
+									<button type="button" class="btn btn-secondary" id="playAgain" onclick="playAgain()">Play Again</button>
+									<button type="button" class="btn btn-secondary" id="block" onclick="block()">Block(5def)</button>
+									<button type="button" class="btn btn-secondary" id="forceField" onclick="forceField()">forceField(10def)</button>
+								</div>
+							</div>
+	</div>
+
+	<script src="game.js"></script>
 </body>
 </html>
