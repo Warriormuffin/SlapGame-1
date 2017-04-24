@@ -12,6 +12,11 @@
 
 }
 
+img.picture{
+  width: 200px;
+  height: 200px;
+}
+
 #buttons.col-xs-12{
   text-align: center
 }
