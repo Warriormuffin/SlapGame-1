@@ -14,3 +14,11 @@
 #buttons.col-xs-12{
   text-align: center
 }
+
+body {
+  background: url(http://cdn.playbuzz.com/cdn/11fce75f-29eb-485c-bb49-6c7d8f850b49/a0713f5b-9ac6-40f7-91c2-7d7e80ca6599.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

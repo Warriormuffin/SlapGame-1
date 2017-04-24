@@ -26,6 +26,9 @@ function playAgain(){
   document.getElementById('ike').innerHTML = '<img src="http://vignette2.wikia.nocookie.net/southpark/images/f/f5/Ike_2.png/revision/latest?cb=20160402113234">'
   document.getElementById('block').disabled = false;
   document.getElementById('forceField').disabled = false;
+  document.getElementById('kick').disabled = false;
+    document.getElementById('finishHim').disabled = false;
+    document.getElementById('punch').disabled = false;
 }
 
 function kick() {
@@ -34,7 +37,9 @@ function kick() {
   if (ike.health <= 0) {
     document.getElementById('block').disabled = true;
     document.getElementById('forceField').disabled = true;
-    document.getElementById('block').disabled = true;
+    document.getElementById('kick').disabled = true;
+    document.getElementById('finishHim').disabled = true;
+    document.getElementById('punch').disabled = true;
   }
   update()
 }
@@ -45,6 +50,9 @@ function punch(){
    if (ike.health <= 0) {
     document.getElementById('block').disabled = true;
     document.getElementById('forceField').disabled = true;
+    document.getElementById('kick').disabled = true;
+    document.getElementById('finishHim').disabled = true;
+    document.getElementById('punch').disabled = true;
   }
   update()
 }
@@ -55,6 +63,9 @@ function finishHim(){
    if (ike.health <= 0) {
     document.getElementById('block').disabled = true;
     document.getElementById('forceField').disabled = true;
+    document.getElementById('kick').disabled = true;
+    document.getElementById('finishHim').disabled = true;
+    document.getElementById('punch').disabled = true;
   }
   update()
 }
@@ -62,7 +73,7 @@ function finishHim(){
 function update(){
   if(ike.health <= 0){
     ike.health = 0
-    // document.getElementById('ike').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/zkcNLtn2gtk?autoplay=1" frameborder="0" allowfullscreen controls=0 false></iframe>'
+    document.getElementById('ike').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/zkcNLtn2gtk?autoplay=1" frameborder="0" allowfullscreen controls=0 false></iframe>'
   }
   document.getElementById('health').innerHTML = 'Health: ' + ike.health;
   document.getElementById('hits').innerHTML = 'Hits: ' + ike.hits;
@@ -75,7 +86,7 @@ function block(){
   document.getElementById('defense').innerHTML = 'Ike is being blocked for 5 damage'
   setTimeout(function() {
     document.getElementById('defense').innerHTML = ''
-  }, 5000);
+  }, 3000);
 }
 
 function forceField(){
