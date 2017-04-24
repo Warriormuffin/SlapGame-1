@@ -18,8 +18,6 @@ block:new Item("block", 2, "Blocks half of the attack damage"),
 heal:new Item('heal',  -2, "Heals you for double the attack damage" )
 }
 
-console.log(items.forcefield.description)
-
 function playAgain(){
   ike.health = 100;
   ike.hits = 0;
@@ -35,9 +33,8 @@ function kick() {
   ike.hits = ike.hits + 1;
   if (ike.health <= 0) {
     document.getElementById('block').disabled = true;
-  }
-  if (ike.health <= 0) {
     document.getElementById('forceField').disabled = true;
+    document.getElementById('block').disabled = true;
   }
   update()
 }
@@ -47,8 +44,6 @@ function punch(){
   ike.hits = ike.hits + 1;
    if (ike.health <= 0) {
     document.getElementById('block').disabled = true;
-  }
-  if (ike.health <= 0) {
     document.getElementById('forceField').disabled = true;
   }
   update()
@@ -59,8 +54,6 @@ function finishHim(){
   ike.hits = ike.hits + 1;
    if (ike.health <= 0) {
     document.getElementById('block').disabled = true;
-  }
-  if (ike.health <= 0) {
     document.getElementById('forceField').disabled = true;
   }
   update()
